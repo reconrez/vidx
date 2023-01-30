@@ -1,1 +1,8 @@
-<p>video-list works!</p>
+<section class="video-list-home">
+  <div class="video-container"
+    (click)="openVideoPlayer(item)"
+    [style]="{'background':'url('+item.thumbnailUrl+')','background-position': 'center','background-size': 'cover'}"
+    *ngFor="let item of vidListData; let i = index">
+      <h3 class="caption">{{item.title}}</h3>
+  </div>
+</section>
