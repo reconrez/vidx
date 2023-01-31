@@ -10,11 +10,14 @@ export class VideoPlayerComponent {
 
   constructor(public vidPlayer: VideoplayerService) { }
 
-  vidJsonData = {}
+  vidJsonData : any = {}
   displayErrorMessage : boolean = false
+  vidEl : any
 
   ngOnInit(): void {
 
+    this.vidEl = document.getElementById('videoEl')
+    console.log(this.vidEl)
     this.vidJsonData = this.vidPlayer.videoData
     let localStorageData = localStorage.getItem("videoData")
 

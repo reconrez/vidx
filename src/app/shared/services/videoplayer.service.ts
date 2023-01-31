@@ -8,7 +8,7 @@ export class VideoplayerService {
 
   constructor() { }
 
-  videoData = {}
+  videoData :any = {}
 
   fetchVideoPlayerData(data:any){
     console.log(data)
