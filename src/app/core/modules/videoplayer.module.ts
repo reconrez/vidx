@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { VideoplayerRoutingModule } from '../routes/videoplayer-routing.module';
-import { ControlsComponent } from '../../shared/components/controls/controls.component';
+import { ControlboxComponent } from '../../shared/components/controlbox/controlbox.component';
 import { SeekBarComponent } from '../../shared/components/seek-bar/seek-bar.component';
-import { TimeDisplayComponent } from '../../shared/components/time-display/time-display.component';
+import { TimeControlsComponent } from '../../shared/components/time-controls/time-controls.component';
 import { VideoInfoComponent } from '../../shared/components/video-info/video-info.component';
 import { TranscriptsComponent } from '../../shared/components/transcripts/transcripts.component';
 
@@ -11,9 +11,9 @@ import { TranscriptsComponent } from '../../shared/components/transcripts/transc
 
 @NgModule({
   declarations: [
-    ControlsComponent,
+    ControlboxComponent,
     SeekBarComponent,
-    TimeDisplayComponent,
+    TimeControlsComponent,
     VideoInfoComponent,
     TranscriptsComponent
   ],

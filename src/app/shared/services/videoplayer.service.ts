@@ -8,6 +8,8 @@ export class VideoplayerService {
 
   constructor() { }
 
+  private seekData = new BehaviorSubject<any>('');
+  public timer = new BehaviorSubject<any>('');
   videoData :any = {}
 
   fetchVideoPlayerData(data:any){
@@ -15,5 +17,4 @@ export class VideoplayerService {
     this.videoData = data
     console.log(this.videoData)
   }
-
 }
